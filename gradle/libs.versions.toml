@@ -1,0 +1,146 @@
+[versions]
+agp = "8.1.1"
+org-jetbrains-kotlin-android = "1.8.10"
+core-ktx = "1.10.1"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+lifecycle-runtime-ktx = "2.6.1"
+activity-compose = "1.7.2"
+compose-bom = "2023.08.00"
+minSdk = "29"
+targetSdk = "34"
+compileSdk = "34"
+
+accompanist = "0.27.0"
+androidx-activity-compose = "1.7.2"
+androidx-compose-bom = "2023.08.00"
+androidx-core-ktx = "1.10.1"
+androidx-lifecycle-runtime-compose = "2.7.0-alpha01"
+androidx-navigation-compose = "2.7.1"
+coil = "2.2.2"
+compose-compiler = "1.3.2"
+coroutines = "1.7.1"
+espresso = "3.5.1"
+gradle-plugin = "7.2.2"
+androidBuildTools = "7.2.2"
+hilt = "2.47"
+hilt-navigation-compose = "1.0.0"
+kotest = "5.5.4"
+kotlin = "1.8.20"
+kotlinx-serialization-json = "1.5.0"
+kover = "0.5.0"
+ktlint = "11.5.0"
+ktlint-plugin = "7.1.0"
+ktor = "2.2.2"
+leakcanary = "2.10"
+mockk = "1.13.5"
+room = "2.5.2"
+test-rules = "1.5.0"
+text-ext = "1.1.5"
+timber = "5.0.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidBuildTools" }
+
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle-runtime-compose" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation-compose" }
+
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" } # kapt
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+
+androidx-test-junit4 = { module = "androidx.test.ext:junit", version.ref = "text-ext" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "test-rules" }
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+androidx-test-espresso-idling-resource = { module = "androidx.test.espresso:espresso-idling-resource", version.ref = "espresso" }
+
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
+androidx-compose-material = { module = "androidx.compose.material:material" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+coil-kt = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-kt-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging-jvm = { module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+mockk-agent-jvm = { module = "io.mockk:mockk-agent-jvm", version.ref = "mockk" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockk" }
+accompanist-webview = { module = "com.google.accompanist:accompanist-webview", version.ref = "accompanist" }
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist" }
+#leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanary" }
+ktlint-gradle = { module = "org.jlleitschuh.gradle:ktlint-gradle", version.ref = "ktlint" }
+
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kover-plugin = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "gradle-plugin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint-plugin" }
+
+[bundles]
+coil = ["coil-kt", "coil-kt-compose"]
+kotest = ["kotest-runner-junit5", "kotest-assertions-core", "kotest-property"]
+ktor = ["ktor-client-android", "ktor-client-serialization", "ktor-client-cio", "ktor-client-content-negotiation", "ktor-client-logging-jvm", "ktor-serialization-kotlinx-json"]
+coroutines = ["kotlinx-coroutines-core", "kotlinx-coroutines-android"]
+
