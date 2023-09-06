@@ -92,6 +92,7 @@ hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", ve
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
 chunker = {module = "com.github.chuckerteam.chucker:library", version.ref = "chunker"}
 

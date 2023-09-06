@@ -1,6 +1,5 @@
 package com.odhiambopaul.data.db
 
-import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
@@ -12,9 +11,8 @@ import com.odhiambopaul.data.db.util.InstantConverter
     entities = [
         AnimeEntity::class
     ],
-    version = 2,
-    exportSchema = true,
-    autoMigrations = [AutoMigration(from = 1, to = 2)]
+    version = 1,
+    exportSchema = false,
 )
 @TypeConverters(
     InstantConverter::class

@@ -13,5 +13,5 @@ interface AnimeDao : BaseDao<AnimeEntity> {
     fun getAnime(): Flow<List<AnimeEntity>>
 
     @Upsert
-    fun insertAnime(anime: List<AnimeEntity>): List<AnimeEntity>
+    fun insertAnime(anime: List<AnimeEntity>)
 }

@@ -1,6 +1,6 @@
 package com.odhiambopaul.data.network.util
 
-import com.odhiambopaul.domain.model.DataResult
+import com.odhiambopaul.domain.models.DataResult
 import io.ktor.client.call.*
 import io.ktor.client.network.sockets.*
 import io.ktor.client.plugins.*

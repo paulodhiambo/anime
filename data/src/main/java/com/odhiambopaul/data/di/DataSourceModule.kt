@@ -19,6 +19,8 @@ class DataSourceModule {
         api: AnimeApi,
         @IoDispatcher ioDispatcher: CoroutineDispatcher
     ): RemoteTopAnimeDataSource =
-        RemoteTopAnimeDataSourceImpl(api = api, ioDispatcher = ioDispatcher)
-
+        RemoteTopAnimeDataSourceImpl(
+            api = api,
+            ioDispatcher = ioDispatcher
+        )
 }

@@ -39,8 +39,7 @@ android {
 }
 
 dependencies {
-    implementation(project(mapOf("path" to ":domain")))
-
+    implementation(project(":domain"))
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -51,6 +50,7 @@ dependencies {
 
     // room
     implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
     kapt(libs.room.compiler)
 
     //ktor

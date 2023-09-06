@@ -3,8 +3,8 @@ package com.odhiambopaul.data.repository.remote
 import com.odhiambopaul.data.di.IoDispatcher
 import com.odhiambopaul.data.network.apis.AnimeApi
 import com.odhiambopaul.data.network.model.responses.AnimeDto
-import com.odhiambopaul.domain.model.DataResult
-import com.odhiambopaul.domain.model.ResourceResult
+import com.odhiambopaul.domain.models.DataResult
+import com.odhiambopaul.domain.models.ResourceResult
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
