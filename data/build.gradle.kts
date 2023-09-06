@@ -63,6 +63,8 @@ dependencies {
     implementation(libs.kotlinx.datetime)
     //timber
     implementation(libs.timber)
+    //chunker
+    implementation(libs.chunker)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

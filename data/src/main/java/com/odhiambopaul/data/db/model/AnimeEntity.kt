@@ -1,7 +1,12 @@
-package com.odhiambopaul.domain.model
+package com.odhiambopaul.data.db.model
 
-data class Anime(
-    val id: Int,
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+
+@Entity(tableName = "tbl_anime")
+data class AnimeEntity(
+    @PrimaryKey val id: Int,
     val airing: Boolean,
     val approved: Boolean,
     val background: String,

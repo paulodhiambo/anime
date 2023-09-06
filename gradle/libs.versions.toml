@@ -36,7 +36,7 @@ timber = "5.0.1"
 appcompat = "1.6.1"
 material = "1.9.0"
 datetime = "0.4.1"
-poet = "1.13.0"
+chunker = "4.0.0"
 
 
 [libraries]
@@ -89,10 +89,11 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
-#square-poet = { module = "com.squareup:javapoet", version.ref = "poet" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+chunker = {module = "com.github.chuckerteam.chucker:library", version.ref = "chunker"}
 
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }

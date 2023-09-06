@@ -10,7 +10,7 @@ import javax.inject.Inject
 
 class AnimeApi @Inject constructor(private val client: HttpClient) {
 
-    suspend fun fetchTopAnime(page: Int = 1, size: Int = 100) = dataResultSafeApiCall {
+    suspend fun fetchTopAnime(page: Int = 1, size: Int = 25) = dataResultSafeApiCall {
         val response: PaginatedResponse =
             client.get(BASE_URL) {
                 url {
