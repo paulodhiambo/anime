@@ -11,5 +11,3 @@ sealed interface DataResult<out T : Any> {
     data class Loading<out T : Any>(val data: T?) : DataResult<T>
     object Empty : DataResult<Nothing>
 }
-
-object Success

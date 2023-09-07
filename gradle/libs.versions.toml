@@ -11,6 +11,7 @@ compose-bom = "2023.08.00"
 minSdk = "29"
 targetSdk = "34"
 compileSdk = "34"
+accompanist-refresh = "0.33.1-alpha"
 
 accompanist = "0.27.0"
 androidx-activity-compose = "1.7.2"
@@ -25,6 +26,9 @@ espresso = "3.5.1"
 gradle-plugin = "7.2.2"
 androidBuildTools = "7.2.2"
 hilt = "2.45"
+hilt-work = "1.0.0"
+workmanager = "2.8.1"
+androidx-lifecyle-ktx = "2.6.2"
 hilt-navigation-compose = "1.0.0"
 kotest = "5.5.4"
 kotlin = "1.8.20"
@@ -59,6 +63,7 @@ kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", ve
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidBuildTools" }
 
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
+androidx-lifecyle-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "androidx-lifecyle-ktx" }
 androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle-runtime-compose" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation-compose" }
@@ -66,6 +71,8 @@ androidx-navigation-compose = { module = "androidx.navigation:navigation-compose
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
+accompanist-refresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist-refresh" }
 
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
@@ -75,26 +82,27 @@ coil-kt-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
 
 
 ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
-kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 
-
+androidx-workmanager = { module = "androidx.work:work-runtime-ktx", version.ref = "workmanager" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hilt-work" }
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
 
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
-chunker = {module = "com.github.chuckerteam.chucker:library", version.ref = "chunker"}
+chunker = { module = "com.github.chuckerteam.chucker:library", version.ref = "chunker" }
 
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
@@ -113,6 +121,6 @@ android-library = { id = "com.android.library", version.ref = "gradle-plugin" }
 
 [bundles]
 coil = ["coil-kt", "coil-kt-compose"]
-ktor = ["ktor-client-okhttp", "ktor-client-serialization","ktor-client-content-negotiation","ktor-serialization-kotlinx-json"]
+ktor = ["ktor-client-okhttp", "ktor-client-serialization", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json"]
 coroutines = ["kotlinx-coroutines-core", "kotlinx-coroutines-android"]
 

@@ -10,7 +10,6 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 interface RemoteTopAnimeDataSource {
-
     suspend fun getAllTopAnimeRemote(): ResourceResult<List<AnimeDto>>
 }
 

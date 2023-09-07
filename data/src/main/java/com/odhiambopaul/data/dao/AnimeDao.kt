@@ -14,4 +14,13 @@ interface AnimeDao : BaseDao<AnimeEntity> {
 
     @Upsert
     fun insertAnime(anime: List<AnimeEntity>)
+
+    @Query("SELECT * FROM tbl_anime WHERE id = :id")
+    suspend fun getAnimeById(id: Int): AnimeEntity?
+
+    @Query("DELETE FROM tbl_anime")
+    suspend fun deleteAll()
+
+    @Query("SELECT COUNT(id) FROM tbl_anime")
+    suspend fun getCount(): Int
 }

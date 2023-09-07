@@ -1,17 +1,17 @@
 package com.odhiambopaul.data.repository.local
 
-import com.odhiambopaul.data.db.model.AnimeEntity
+import com.odhiambopaul.domain.models.Anime
 import kotlinx.coroutines.flow.Flow
 
 interface LocalAnimeDataSource {
 
-    fun getCachedAnime(): Flow<List<AnimeEntity>>
+    fun getCachedAnime(): Flow<List<Anime>>
 
-    suspend fun getCachedAnimeById(speakerId: Int): AnimeEntity?
+    suspend fun getCachedAnimeById(animeId: Int): Anime?
 
-    fun fetchCachedAnimeCount(): Flow<Int>
+    suspend fun fetchCachedAnimeCount(): Flow<Int>
 
     suspend fun deleteAllCachedAnime()
 
-    suspend fun saveCachedAnime(speakers: List<AnimeEntity>)
+    suspend fun saveCachedAnime(animes: List<Anime>)
 }

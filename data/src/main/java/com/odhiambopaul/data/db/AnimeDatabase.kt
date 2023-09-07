@@ -18,5 +18,5 @@ import com.odhiambopaul.data.db.util.InstantConverter
     InstantConverter::class
 )
 abstract class AnimeDatabase : RoomDatabase() {
-    abstract fun sessionDao(): AnimeDao
+    abstract fun animeDao(): AnimeDao
 }

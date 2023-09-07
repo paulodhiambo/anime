@@ -2,9 +2,9 @@ package com.odhiambopaul.data.repository.mapper
 
 import com.odhiambopaul.data.db.model.AnimeEntity
 import com.odhiambopaul.data.network.model.responses.AnimeDto
+import com.odhiambopaul.domain.models.Anime
 
-fun AnimeDto.toEntity() = AnimeEntity(
-    id = 0,
+fun AnimeDto.toDomainModel() = Anime(
     airing = airing,
     approved = approved,
     background = background,
@@ -28,6 +28,66 @@ fun AnimeDto.toEntity() = AnimeEntity(
     titleEnglish = title_english,
     embedUrl = trailer.embed_url,
     trailerUrl = trailer.youtube_id,
+    type = type,
+    url = url,
+    year = year
+)
+
+fun AnimeEntity.toDomainModel() = Anime(
+    airing = airing,
+    approved = approved,
+    background = background,
+    duration = duration,
+    episodes = episodes,
+    favorites = favorites,
+    smallImage = smallImage,
+    largeImage = largeImage,
+    malId = malId,
+    members = members,
+    popularity = popularity,
+    rank = rank,
+    rating = rating,
+    score = score,
+    scoredBy = scoredBy,
+    season = season,
+    source = source,
+    status = status,
+    synopsis = synopsis,
+    title = title,
+    titleEnglish = titleEnglish,
+    embedUrl = embedUrl,
+    trailerUrl = trailerUrl,
+    type = type,
+    url = url,
+    year = year
+)
+
+
+fun Anime.toEntityModel() = AnimeEntity(
+    id = 0,
+    airing = airing,
+    approved = approved,
+    background = background,
+    duration = duration,
+    episodes = episodes,
+    favorites = favorites,
+    smallImage = smallImage,
+    largeImage = largeImage,
+    malId = malId,
+    members = members,
+    popularity = popularity,
+    rank = rank,
+    rating = rating,
+    score = score,
+    scoredBy = scoredBy,
+    season = season,
+    source = source,
+    status = status,
+    synopsis = synopsis,
+    title = title,
+    titleEnglish = titleEnglish,
+    embedUrl = embedUrl,
+    trailerUrl = trailerUrl,
     type = type,
     url = url,
     year = year

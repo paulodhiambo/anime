@@ -15,5 +15,5 @@ object DaoModule {
     @Singleton
     fun provideAnimeDao(
         database: AnimeDatabase
-    ): AnimeDao = database.sessionDao()
+    ): AnimeDao = database.animeDao()
 }

@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.org.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.android.plugin)
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -57,7 +59,7 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":data"))
     implementation(project(":domain"))
     implementation(project(":presentation"))
 
@@ -73,13 +75,15 @@ dependencies {
     //hilt
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
+    implementation(libs.androidx.workmanager)
+    implementation(libs.hilt.work)
+    implementation("com.google.firebase:firebase-crashlytics-ktx:18.4.1")
+    implementation("com.google.firebase:firebase-analytics-ktx:21.3.0")
     kapt(libs.hilt.compiler)
 
     //timber
     implementation(libs.timber)
 
-    //coil
-    implementation(libs.coil.kt.compose)
 
     //test
     testImplementation(libs.junit)

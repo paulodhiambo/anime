@@ -50,9 +50,11 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
     //compose
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
     implementation(libs.ui)
@@ -64,6 +66,10 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
     kapt(libs.hilt.compiler)
+    //coil
+    implementation(libs.coil.kt.compose)
+    //acompanist-refresh
+    implementation(libs.accompanist.refresh)
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)

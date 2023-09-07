@@ -41,11 +41,11 @@ android {
 dependencies {
     implementation(project(":domain"))
     implementation(libs.core.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.material)
+    implementation(libs.androidx.lifecyle.ktx)
     //hilt
     implementation(libs.hilt.android)
-    implementation(libs.hilt.navigation.compose)
+    implementation(libs.hilt.work)
+    implementation(libs.androidx.workmanager)
     kapt(libs.hilt.compiler)
 
     // room
@@ -65,7 +65,10 @@ dependencies {
     implementation(libs.timber)
     //chunker
     implementation(libs.chunker)
-
+    //coroutine
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    //test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

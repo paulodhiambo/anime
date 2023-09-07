@@ -40,11 +40,8 @@ android {
 
 dependencies {
     implementation(libs.core.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.material)
     //hilt
     implementation(libs.hilt.android)
-    implementation(libs.hilt.navigation.compose)
     kapt(libs.hilt.compiler)
 
     testImplementation(libs.junit)
