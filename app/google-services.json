@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973360163581",
+    "project_id": "anime-00",
+    "storage_bucket": "anime-00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973360163581:android:79352e369a7a86b318ac94",
+        "android_client_info": {
+          "package_name": "com.odhiambopaul.anime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973360163581-4qan236itnhnrk9ceq547k6806g69qqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwLfU6HHkyAXjD_RKnnWC6KYcfH99kAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973360163581-4qan236itnhnrk9ceq547k6806g69qqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
